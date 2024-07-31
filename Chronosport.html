@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chronosport</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="scripts/functions.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Chronosport 1.2</h1>
-    </header>
     <main>
-        <div class="zoneSaisie">
-            <label for="exercice">temps d'exercice en secondes</label>
-            <input type="text" id="exercice" name="secondes" maxlength="3">
-            <label for="repos">temps de repos en secondes</label>
-            <input type="text" id="repos" name="secondes" maxlength="3">
-            <label for="cycles">nombre de cycles exercice -> repos</label> 
-            <input type="text" id="cycles" name="nombre" maxlength="3">   
-        </div>
-        <button id="startBtn">C'est parti!</button>
-        <div class="chronos">
-            <h2>exercice</h2>
-            <div id="extime">00</div>
-            <h2>repos</h2>
-            <div id="retime">00</div>   
-        </div>
-        <p>cycle n° <span>0</span></p>  
+        <h1>Chronosport 1.2</h1>
+        <section>
+            <div class="blue">
+                <label for="exercice">ACTION !</label>
+                <input type="text" id="exercice" name="secondes" maxlength="3">
+                <span>s</span>
+            </div>
+            <div class="yellow">
+                <label for="repos">Chill...</label>
+                <input type="text" id="repos" name="secondes" maxlength="3">
+                <span>s</span>
+            </div>
+            <div>
+                <img src="cycle.png">
+                <input type="text" id="cycles" name="nombre" maxlength="2">
+                <span>X</span>
+            </div>
+        </section>   
+        <button id="startBtn">START</button>
     </main>
-    <footer>
-        @Copyright : Clément Fournier
-    </footer>
+    <div id="gradientMain" class="transition opacity"></div>
+    <div id="gradientAction" class="transition opacity"></div>
+    <div id="gradientChill"></div> 
 </body>
 </html>
