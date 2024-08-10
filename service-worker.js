@@ -3,18 +3,18 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open('my-web-app-cache').then((cache) => {
       return cache.addAll([
-        '/index.html',
-        '/style.css',
-        '/manifest.json',
-        '/README.md',
-        '/images/chronosport.png',
-        '/images/cycles.png',
-        '/sounds/exerciceBeep.mp3',
-        '/sounds/finishBeep.mp3',
-        '/sounds/reposBeep.mp3',
-        '/sounds/timeOutBeep.mp3',
-        '/scripts/functions.js',
-        '/scripts/script.js'
+        'Chronosport/index.html',
+        'Chronosport/style.css',
+        'Chronosport/manifest.json',
+        'Chronosport/README.md',
+        'Chronosport/images/chronosport.png',
+        'Chronosport/images/cycles.png',
+        'Chronosport/sounds/exerciceBeep.mp3',
+        'Chronosport/sounds/finishBeep.mp3',
+        'Chronosport/sounds/reposBeep.mp3',
+        'Chronosport/sounds/timeOutBeep.mp3',
+        'Chronosport/scripts/functions.js',
+        'Chronosport/scripts/script.js'
       ]);
     }).catch(error => {
       console.error('Failed to open cache or cache resources:', error);
