@@ -1,22 +1,21 @@
+//déclenchement du service worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/scripts/service-worker.js').then((registration) => {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
         }, (error) => {
             console.log('ServiceWorker registration failed: ', error);
         });
     });
 }
-
-
-
-
-
-
+//script principal
+//définit les champs d'entrée
 let actionInput = document.getElementById("exercice")
 let chillInput  = document.getElementById("repos")
 let cycleInput = document.getElementById("cycles")
 let button = document.getElementById("startBtn")
+let timeOutBeep = new Audio("sounds/timeOutBeep.mp3")
+//déclenchement du bouton start
 button.addEventListener("click", () =>{
     let exVal = Number(exercice.value)
     let reVal = Number(repos.value)
@@ -51,13 +50,3 @@ button.addEventListener("click", () =>{
         console.log("il faut au minimum 1 pour chaque entrée")
     }
 })
-
-            
-
-            
-               
-            
-
-
-
-        

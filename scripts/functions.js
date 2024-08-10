@@ -4,14 +4,13 @@
 function exCount(exVal, reVal, cyVal, currentCycle){
     let background = document.getElementById("gradientMain")
     background.style.opacity = 0
-    console.log(background)
     let sec = exVal
     console.log(exVal)
     let timer = setInterval(function(){
         exTime.innerHTML = sec
         sec --
         if(sec < 7  && sec > -1){
-            let timeOutBeep = new Audio("sounds/timeOutBeep.mp3")
+            
             timeOutBeep.play()
         }
         if (sec < 0){
@@ -27,12 +26,11 @@ function reCount(reVal, cyVal, currentCycle, exVal){
     let background = document.getElementById("gradientAction")
     background.style.opacity = 0
     let sec = reVal
-    console.log(reVal)
     let timer = setInterval(function(){
         reTime.innerHTML = sec
         sec --
         if(sec < 7  && sec > -1){
-            let timeOutBeep = new Audio("sounds/timeOutBeep.mp3")
+            
             timeOutBeep.play()
         }
         if(sec < 0){
