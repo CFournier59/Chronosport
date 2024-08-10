@@ -1,9 +1,9 @@
 self.addEventListener('install', (event) => {
+  console.log("installing")
   event.waitUntil(
     caches.open('my-web-app-cache').then((cache) => {
       return cache.addAll([
-        '/',
-        '/Chronosport.html',
+        '/index.html',
         '/style.css',
         '/manifest.json',
         '/README.md',
@@ -16,6 +16,8 @@ self.addEventListener('install', (event) => {
         '/scripts/functions.js',
         '/scripts/script.js'
       ]);
+    }).catch(error => {
+      console.error('Failed to open cache or cache resources:', error);
     })
   );
 });  
