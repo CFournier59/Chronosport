@@ -1,0 +1,124 @@
+/* balises */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    background-color: black;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+}
+button{
+    height: 60px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 15px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+    background-color: #ffffe1;
+    border-radius: 0;
+}
+div{
+    font-size: 32px;
+    display: flex;
+    height: 92px;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+}
+h1{
+    font-size: 40px;   
+}
+img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 110px;
+}
+input[type = "text"]{
+    height: 46px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 40px;
+    font-family: "Jost", sans-serif;
+    text-align: right;
+}
+label{
+    width: 141px;
+    position: relative;
+    right: 110px;
+   
+}
+main{
+    padding: 26px;
+    width: 340px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p{
+    font-weight: 500;
+    font-size: 45px;
+    width: 70px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 488px;
+}
+/* classes */
+.blue{
+    color: #52acff;
+}
+.cycle{
+    font-weight: 500;
+    font-size: 45px;
+    width: 110px;
+}
+.hide{
+    z-index: -9999999999;
+}
+.move{
+    right: 80px;
+}
+.opacity{
+    opacity: 1;
+}
+.transition{
+    transition: opacity 1s ease;
+}
+.yellow{
+    color: #ffe32c;
+}
+/*ids*/
+#gradientAction{
+    background-image: linear-gradient(-165deg, #ffe32c 55%, #52acff 75%);
+    width: 340px;
+    height: 640px;
+    padding: 26px;
+    position: absolute;
+    top: 0px;
+    z-index: -5;
+}
+#gradientChill{
+    background-image: linear-gradient(-165deg, #ffe32c 7%, #52acff 27%);
+    width: 340px;
+    height: 640px;
+    padding: 26px;
+    position: absolute;
+    top: 0px;
+    z-index: -10;
+}
+#gradientMain{
+    background-image: linear-gradient(-165deg, #ffe32c 32%, #52acff 52%);
+    width: 340px;
+    height: 640px;
+    padding: 26px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+

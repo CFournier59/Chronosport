@@ -1,0 +1,22 @@
+{
+  "name": "Chronosports 1.4",
+  "short_name": "Chronosports",
+  "description": "a simple app that trigger a timer between exercie time and repo time",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/images/chronosports.png",
+      "sizes": "192x192",
+      "type": "png"
+    },
+    {
+      "src": "/images/chronosports.png",
+      "sizes": "512x512",
+      "type": "png"
+    }
+  ]
+}
+  

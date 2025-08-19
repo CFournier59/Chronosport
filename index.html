@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chronosport</title>
+        <link rel="manifest" href="https://cfournier59.github.io/Chronosport/manifest.json">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/functions.js" defer></script>
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h1>Chronosport 1.4</h1>
+            <section>
+                <div class="blue">
+                    <label for="exercice">ACTION !</label>
+                    <input type="text" id="exercice" name="secondes" maxlength="3">
+                    <span>s</span>
+                </div>
+                <div class="yellow">
+                    <label for="repos">Chill...</label>
+                    <input type="text" id="repos" name="secondes" maxlength="3">
+                    <span>s</span>
+                </div>
+                <div>
+                    <img src="images/cycle.png">
+                    <input type="text" id="cycles" name="nombre" maxlength="2">
+                    <span>X</span>
+                </div>
+            </section>   
+            <button id="startBtn">START</button>
+        </main>
+        <div id="gradientMain" class="transition opacity"></div>
+        <div id="gradientAction" class="transition opacity"></div>
+        <div id="gradientChill"></div> 
+    </body>
+</html>
