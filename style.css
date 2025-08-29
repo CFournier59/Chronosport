@@ -8,6 +8,8 @@ body{
     color: white;
     font-family: "Jost", sans-serif;
     font-weight: 600;
+    height: 450px;
+    min-width: 450px;
 }
 button{
     height: 60px;
@@ -22,7 +24,6 @@ button{
 div{
     font-size: 32px;
     display: flex;
-    height: 92px;
     align-items: center;
     justify-content: right;
     text-align: right;
@@ -52,11 +53,10 @@ label{
 }
 main{
     padding: 26px;
-    width: 340px;
-    height: 640px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 p{
     font-weight: 500;
@@ -67,7 +67,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 488px;
+    height: inherit;
 }
 /* classes */
 .blue{
@@ -96,29 +96,28 @@ section{
 /*ids*/
 #gradientAction{
     background-image: linear-gradient(-165deg, #ffe32c 55%, #52acff 75%);
-    width: 340px;
-    height: 640px;
-    padding: 26px;
-    position: absolute;
-    top: 0px;
     z-index: -5;
 }
 #gradientChill{
     background-image: linear-gradient(-165deg, #ffe32c 7%, #52acff 27%);
-    width: 340px;
-    height: 640px;
-    padding: 26px;
-    position: absolute;
-    top: 0px;
     z-index: -10;
 }
 #gradientMain{
-    background-image: linear-gradient(-165deg, #ffe32c 32%, #52acff 52%);
-    width: 340px;
-    height: 640px;
-    padding: 26px;
-    position: absolute;
-    top: 0px;
+    background-image: linear-gradient(-165deg, #ffe32c 42%, #52acff 62%);
     z-index: -1;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient{
+height: 450px;
+padding-top: 62px;
+position: absolute;
+width: 100%;
+top: 0px;
 }
 
